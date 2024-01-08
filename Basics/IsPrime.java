@@ -13,6 +13,11 @@ public class IsPrime {
     }
 
     public static void isPrime(int num) {
+        if(num == 1) {
+            System.out.println("Not Prime");
+            return;
+        }
+
         boolean isPrime = true;
         for(int i = 2; i < num; ++i) {
             if(num % i == 0) {
@@ -26,6 +31,11 @@ public class IsPrime {
     }
 
     public static void isPrimeOptimised(int num) {
+        if(num == 1) {
+            System.out.println("Not Prime");
+            return;
+        }
+        
         boolean isPrime = true;
         for(int i = 2; i * i <= num; ++i) {
             if(num % i == 0) {
