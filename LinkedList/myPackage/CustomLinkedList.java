@@ -25,6 +25,10 @@ public class CustomLinkedList {
         return size;
     }
 
+    public void setSize(int size) {
+        this.size = size;
+    }
+
     public void display() {
         Node temp = head;
         while (temp != null) {
